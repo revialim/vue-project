@@ -1,4 +1,5 @@
-# test-project
+# Vue Learning Project
+Learning vue.js while building the average modern web application.
 
 ## Project setup
 ```
