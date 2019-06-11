@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar/>
+    <h1>Home</h1>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <PictureStuff testprop="testprop content haha" picture_src="../assets/logo.png"/>
+
+    <input v-model="username" placeholder="your name">
+
+    <p>Welcome {{username}} </p>
+
+    <TodoList/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PictureStuff from './components/PictureStuff.vue'
+import TodoList from './components/TodoList.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    // HelloWorld,
+    PictureStuff,
+    TodoList,
+    NavBar
+  },
+  data() {
+    return {
+      testvar: 'test ',
+      username: ''
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+#app
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  /* text-align: center; */
+  color: #2c3e50
+  /* margin-top: 60px; */
+  margin: 0
+  
+  h1
+    margin-top: 0
 </style>
