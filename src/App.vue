@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <NavBar/>
+    <Header/>
+    
     <h1>Home</h1>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <PictureStuff testprop="testprop content haha" picture_src="../assets/logo.png"/>
@@ -18,6 +20,7 @@
 import PictureStuff from './components/PictureStuff.vue'
 import TodoList from './components/TodoList.vue'
 import NavBar from './components/NavBar.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'app',
@@ -25,7 +28,8 @@ export default {
     // HelloWorld,
     PictureStuff,
     TodoList,
-    NavBar
+    NavBar,
+    Header
   },
   data() {
     return {

@@ -17,12 +17,11 @@ export default {
 <style lang="sass">
 #navbar
   position: sticky
-  background-color: #333
+  background-color: #000
   color: #eee
-  //height: 2em
   padding: 1em
   font-size: 1.3em
-  box-shadow: 0px 0px 10px #ff34de
+  // box-shadow: 0px 0px 10px #ff34de
 
   a
     color: #ddd
