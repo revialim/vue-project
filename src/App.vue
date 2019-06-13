@@ -2,10 +2,18 @@
   <div id="app">
     <NavBar/>
     <Header/>
+
+    <TextCard title="Some H1 Title Lorem" content_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+      nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate 
+      velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum."/>
     
-    <h1>Home</h1>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <PictureStuff testprop="testprop content haha" picture_src="../assets/logo.png"/>
+
+    <PictureCard testprop="testprop content haha" picture_src="../assets/logo.png"/>
 
     <input v-model="username" placeholder="your name">
 
@@ -17,19 +25,21 @@
 </template>
 
 <script>
-import PictureStuff from './components/PictureStuff.vue'
+import PictureCard from './components/PictureCard.vue'
 import TodoList from './components/TodoList.vue'
 import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
+import TextCard from './components/TextCard.vue'
 
 export default {
   name: 'app',
   components: {
     // HelloWorld,
-    PictureStuff,
+    PictureCard,
     TodoList,
     NavBar,
-    Header
+    Header,
+    TextCard
   },
   data() {
     return {
