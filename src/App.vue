@@ -3,7 +3,7 @@
     <NavBar/>
     <Header/>
 
-    <TextCard title="Some H1 Title Lorem" content_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    <TextCard v-bind:maintext=true title="Some H1 Title Lorem" content_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
       nisi ut aliquip ex ea commodo consequat. 
@@ -12,8 +12,11 @@
       Excepteur sint occaecat cupidatat non proident, 
       sunt in culpa qui officia deserunt mollit anim id est laborum."/>
     
+    <TextCard v-bind:maintext=false title="some h2 title test" content_text="Duis aute irure dolor in reprehenderit in voluptate 
+      velit esse cillum dolore eu fugiat nulla pariatur." />
 
-    <PictureCard testprop="testprop content haha" picture_src="../assets/logo.png"/>
+    <PictureCard pic_desc="some picture description png" picture_src='orange.png'/>
+    <PictureCard pic_desc='some picture description jpg' picture_src='sunset.jpg'/>
 
     <input v-model="username" placeholder="your name">
 
@@ -34,7 +37,6 @@ import TextCard from './components/TextCard.vue'
 export default {
   name: 'app',
   components: {
-    // HelloWorld,
     PictureCard,
     TodoList,
     NavBar,
