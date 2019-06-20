@@ -3,6 +3,8 @@
     <NavBar/>
     <Header/>
 
+    <ChartCard />
+    
     <TextCard v-bind:maintext=true title="Some H1 Title Lorem" content_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -33,6 +35,7 @@ import TodoList from './components/TodoList.vue'
 import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
 import TextCard from './components/TextCard.vue'
+import ChartCard from './components/ChartCard.vue'
 
 export default {
   name: 'app',
@@ -41,7 +44,8 @@ export default {
     TodoList,
     NavBar,
     Header,
-    TextCard
+    TextCard,
+    ChartCard
   },
   data() {
     return {
