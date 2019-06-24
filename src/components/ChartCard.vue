@@ -142,17 +142,17 @@ export default {
             type: 'candlestick',
             name: 'AAPL',
             data: dataOhlcVolume.ohlc,
-            // dataGrouping: {
-            //   units: groupingUnits
-            // }
+            dataGrouping: {
+              units: groupingUnits
+            }
           }, {
             type: 'column',
             name: 'Volume',
             data: dataOhlcVolume.volume,
             yAxis: 1,
-            // dataGrouping: {
-            //   units: groupingUnits
-            // }
+            dataGrouping: {
+              units: groupingUnits
+            }
           }]
       }
     }

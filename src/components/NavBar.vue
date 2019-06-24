@@ -1,18 +1,9 @@
 <template>
   <div id="navbar">
-    <a href="#home">Home</a>
-    <a href="#some">Some</a>
-    <a href="#where">Where</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style lang="sass">
 #navbar

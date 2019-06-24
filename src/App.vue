@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <NavBar/>
-    <Header/>
+    <router-view/>
 
+<!-- 
+    <NavBar/>
+    <Header/>
+ 
     <ChartCard />
     
     <TextCard v-bind:maintext=true title="Some H1 Title Lorem" content_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -16,19 +20,19 @@
     
     <TextCard v-bind:maintext=false title="some h2 title test" content_text="Duis aute irure dolor in reprehenderit in voluptate 
       velit esse cillum dolore eu fugiat nulla pariatur." />
-
+ 
     <PictureCard pic_desc="some picture description png" picture_src='orange.png'/>
     <PictureCard pic_desc='some picture description jpg' picture_src='sunset.jpg'/>
-
+ 
     <input v-model="username" placeholder="your name">
-
+ 
     <p>Welcome {{username}} </p>
-
-    <TodoList/>
-
+ 
+    <TodoList/> -->
   </div>
 </template>
 
+ 
 <script>
 import PictureCard from './components/PictureCard.vue'
 import TodoList from './components/TodoList.vue'
