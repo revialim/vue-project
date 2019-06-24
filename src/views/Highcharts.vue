@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <Header/>
-    This is home
+  <div class="highcharts">
+    <ChartCard/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from '../components/Header.vue'
+import ChartCard from '../components/ChartCard.vue'
 
 export default {
   name: 'home',
   components: {
-    Header
+    ChartCard
   }
 }
 </script>
