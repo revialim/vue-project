@@ -3,8 +3,21 @@
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/highcharts">Highcharts</router-link>
+    <UserInfoBox/>
   </div>
 </template>
+
+<script>
+import UserInfoBox from './UserInfoBox.vue'
+
+export default {
+  name: 'navbar',
+  components: {
+    UserInfoBox
+  },
+}
+</script>
+
 
 <style lang="sass">
 #navbar
